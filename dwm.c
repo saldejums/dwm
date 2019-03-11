@@ -1970,7 +1970,7 @@ tile(Monitor *m)
         /* tile clients */
         for(c = nexttiled(m->clients), i = 0; i < n; c = nexttiled(c->next), i++) {
 		a = ma->n > 0 ? ma : sa;
-		--a->n;> 0
+		--a->n;
 		if (i < m->nmaster) {
 		  w = a->dir == DirVer ? a->fx - a->x : (c->cfact / mfacts) * (a->fx - a->x - a->n * m->gappx);
 		  h = a->dir == DirHor ? a->fy - a->y : (c->cfact / mfacts) * (a->fy - a->y - a->n * m->gappx);
